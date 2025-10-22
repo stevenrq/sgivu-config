@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sgivu-config
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/stevenrq/sgivu-config-repo.git
+          default-label: main
+
+server:
+  port: 8888
